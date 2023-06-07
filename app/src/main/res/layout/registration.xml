@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="547dp"
+        android:background="@drawable/round_btn"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="sans-serif-black"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="SWEETHOME"
+            android:textColor="#5D047A"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/namefld"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/whatsappfld"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Whatsapp"
+            android:inputType="phone"
+            android:paddingLeft="20sp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/emailfld"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20sp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/passwordfld"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20sp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/HostBtn"
+            android:layout_width="259dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="0sp"
+            android:backgroundTint="#3F51B5"
+            android:text="HOST"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

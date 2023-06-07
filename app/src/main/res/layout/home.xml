@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:backgroundTint="#ffffff">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="409dp"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="300dp"
+                android:layout_height="50sp"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#D6D1D1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10sp"
+                android:text="Where to find?"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="407dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/square_border"
+            android:backgroundTint="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="49dp"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#DDDADA"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Appartment"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="House"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/host"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                android:backgroundTint="#60939A"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Host"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="50sp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+            <LinearLayout
+                android:id="@+id/viewMap1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house1"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    tools:srcCompat="@drawable/appartment_mittagspitze_esstisch_kueche" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texViefdw1"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Etoudi, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView4fa1"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew3ds1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="2km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidewsfsd31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="220,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house2"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    tools:srcCompat="@drawable/appart8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texViefdw32"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Emana, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView4fa2"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew3ds32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="0.2km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidewsfsd352"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="120,000 FCFA / Month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house3"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    tools:srcCompat="@drawable/appart7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texViefdw33"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text=" NKOZOA, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView4fa3"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew3ds33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="20km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidewsfsd33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="100,000CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house4"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    tools:srcCompat="@drawable/appart6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texViefdw34"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Nsimaleng, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView4fa4"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew3ds34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="36km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidewsfsd354"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="310,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house5"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    tools:srcCompat="@drawable/appart5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texViefdw35"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Ngousso, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView4fa5"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew3ds35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="16km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidewsfsd355"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="110,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house6"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    tools:srcCompat="@drawable/appart4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texViefdw316"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Nsam, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView4fa6"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew3ds37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="16km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidewsfsd357"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="50,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap7"
+                android:layout_width="match_parent"
+                android:layout_height="463dp"
+                android:layout_marginTop="50sp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house7"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    android:scaleType="center"
+                    tools:srcCompat="@drawable/appart1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView311"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Bastos, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textw7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="10km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="320,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap8"
+                android:layout_width="match_parent"
+                android:layout_height="472dp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house8"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    android:scaleType="center"
+                    tools:srcCompat="@drawable/apart2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textVbfdiew38"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Emana, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzceView8"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVi8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="12km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVie38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="50,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap9"
+                android:layout_width="349dp"
+                android:layout_height="452dp"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house9"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    android:scaleType="center"
+                    tools:srcCompat="@drawable/appart3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texView9"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Etoudi, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView9"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="17km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidew39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="220,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/viewMap10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/house10"
+                    android:layout_width="match_parent"
+                    android:layout_height="315dp"
+
+                    tools:srcCompat="@drawable/appart4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texViefdw310"
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5sp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Etoudi, Yaounde"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagdzeView4fa"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textVisdew3ds30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:text="16km away"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textVidewsfsd310"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff"
+                    android:backgroundTint="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="220,000 CFA/ month"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
