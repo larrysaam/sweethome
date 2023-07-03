@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+
+    <!-- Put the following two uses permissions statemens for remote db connection -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +33,7 @@
             android:value="YOUR_API_KEY" />
 
         <activity
-            android:name=".Home"
+            android:name=".LoginController"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,41 +43,13 @@
         </activity>
 
         <activity
-            android:name=".MarksEdit"
+            android:name=".Home"
             android:label="@string/app_name" />
         <activity
-            android:name=".ClassSelect"
+            android:name=".MarkSheetController"
             android:label="@string/app_name" />
         <activity
-            android:name=".Login"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".SubjectSelector"
-            android:label="@string/app_name" />
-
-        <activity
-            android:name=".Regis"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".Addpicture"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".Location"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".Rooms"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".Loca"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".Homedetails"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".Details2"
-            android:label="@string/app_name" />
-        <activity
-            android:name=".Details3"
+            android:name=".SubjectController"
             android:label="@string/app_name" />
 
     </application>
